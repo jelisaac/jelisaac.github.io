@@ -1,0 +1,2 @@
+# Copy and paste this into your Powershell Terminal for now
+Get-ChildItem images\fulls -Filter *.jpg | foreach-object { convert $_.FullName -resize 360x247^ -gravity center -extent 360x247 images\thumbs\$_ }
